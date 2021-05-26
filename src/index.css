@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    color: #478096;
+    font-family: "Nunito", sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(192,202,215,1) 38%, rgba(101,135,227,1) 74%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+    gap:20px
+}
+
+.weather-container{
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.281);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.none{
+    display: none;
+}
+
+.btn{
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    border:0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.363);
 }
