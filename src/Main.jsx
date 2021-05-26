@@ -12,8 +12,7 @@ export default function Main(){
                 let locationHeading = content.location.name +", "+content.location.country;
                 let temperature = content.current.temp_c;
                 let weather = content.current.condition.icon;
-                let airIndex = (Math.round(content.current.air_quality.co) + Math.round(content.current.air_quality.no2) + Math.round(content.current.air_quality.o3) 
-                    + Math.round(content.current.air_quality.pm2_5) +  Math.round(content.current.air_quality.pm10 + content.current.air_quality.so2))/6;
+                let airIndex = Math.round(content.current.air_quality.pm10);
                 document.querySelector(".city-heading").innerText = locationHeading;
                 document.querySelector(".temperature").innerText = "Temperature: " +temperature +" "+ String.fromCharCode(8451);
                 let emoji = airIndex<=50? "😁": airIndex <= 100? "😊" : airIndex <= 150? "😐" : airIndex <= 200? "😷" : airIndex <=300? "🤢" : "💀";   
